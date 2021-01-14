@@ -9,7 +9,8 @@ const data: Translation =
   },
   messages:
   {
-    success: 'Success'
+    success: 'Success',
+    loginFailed: 'Incorrect username or password'
   },
   labels:
   {
@@ -19,7 +20,11 @@ const data: Translation =
     enterLargeNumber: 'Enter a large number',
     localizedNumber: 'Localized number',
     enterDate: 'Enter a date (e.g. 1/1/2020)',
-    localizedDate: 'Localized date'
+    localizedDate: 'Localized date',
+    username: 'Username',
+    password: 'Password',
+    loginTitle: 'Enter username or password to login',
+    logout: 'Logout'
   }
 }
 

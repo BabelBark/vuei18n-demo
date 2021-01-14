@@ -48,9 +48,7 @@ export default {
 
 <style lang="scss">
 
-  .content {
-    text-align: left;
-  }
+  @import '../../styles.scss';
 
   .scroll {
     overflow-y: scroll

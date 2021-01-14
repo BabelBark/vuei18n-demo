@@ -10,16 +10,32 @@
     <v-row>
       <v-col>
         <local-text
-          :height=450
+          :height=400
           class="ma-6"
         />
       </v-col>
       <v-col>
         <component
-          :height=450
+          :height=400
           v-bind:is="policyComponent"
           :locale="selectedLocale"
           class="ma-6"
+        />
+      </v-col>
+      <v-col>
+        <login
+          :height=400
+          class="ma-6"
+          :locale="selectedLocale"
+          @login="onAuthChange"
+          v-if="!isLoggedIn"
+        />
+        <logout
+          :height=400
+          class="ma-6"
+          :locale="selectedLocale"
+          @logout="onAuthChange"
+          v-else
         />
       </v-col>
     </v-row>
@@ -67,6 +83,8 @@ import Numbers from '@/components/Numbers.vue'
 import Currency from '@/components/Currency.vue'
 import TranslationContent from '@/components/TranslationContent.vue'
 import Dates from '@/components/Dates.vue'
+import Login from '@/components/Login.vue'
+import Logout from '@/components/Logout.vue'
 
 export default {
   name: 'LocalComponents',
@@ -76,11 +94,14 @@ export default {
     Numbers,
     Currency,
     TranslationContent,
-    Dates
+    Dates,
+    Login,
+    Logout
   },
   data () {
     return {
-      selectedLocale: ''
+      selectedLocale: '',
+      isLoggedIn: false
     }
   },
   computed: {
@@ -91,11 +112,15 @@ export default {
   },
   beforeMount () {
     this.selectedLocale = this.$i18n.locale
+    this.onAuthChange()
   },
   methods: {
     onChangeLocale (locale: string): void {
       this.selectedLocale = locale
       this.$i18n.locale = locale
+    },
+    onAuthChange () {
+      this.isLoggedIn = (localStorage.token && localStorage.token.length > 10)
     }
   }
 }

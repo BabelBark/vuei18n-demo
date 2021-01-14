@@ -9,7 +9,8 @@ const data: Translation =
   },
   messages:
   {
-    success: '成功'
+    success: '成功',
+    loginFailed: 'ユーザーネームまたはパスワードが違います'
   },
   labels:
   {
@@ -19,7 +20,11 @@ const data: Translation =
     enterLargeNumber: '多数入力してください',
     localizedNumber: 'ローカライズされた番号',
     enterDate: '日付を入力してください（例：2020年1月1日）',
-    localizedDate: 'ローカライズされた日付'
+    localizedDate: 'ローカライズされた日付',
+    username: 'ユーザー名',
+    password: 'パスワード',
+    loginTitle: 'ログインするユーザー名またはパスワードを入力してください',
+    logout: 'ログアウト'
   }
 }
 

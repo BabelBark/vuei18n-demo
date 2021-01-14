@@ -15,6 +15,7 @@ export interface TranslationContent {
 
 export interface TranslationMessage {
     success: string;
+    loginFailed: string;
 }
 
 export interface TranslationLabel {
@@ -25,6 +26,9 @@ export interface TranslationLabel {
     localizedNumber: string;
     enterDate: string;
     localizedDate: string;
+    username: string;
+    password: string;
+    loginTitle: string;
 }
 
 export interface TranslationNumbers {

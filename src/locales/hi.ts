@@ -9,7 +9,8 @@ const data: Translation =
   },
   messages:
   {
-    success: 'सफलता'
+    success: 'सफलता',
+    loginFailed: 'गलत उपयोगकर्ता नाम या पासवर्ड'
   },
   labels:
   {
@@ -19,7 +20,11 @@ const data: Translation =
     enterLargeNumber: 'एक बड़ी संख्या दर्ज करें',
     localizedNumber: 'स्थानीयकृत संख्या',
     enterDate: 'दिनांक दर्ज करें (उदा। 1/1/2020)',
-    localizedDate: 'स्थानीयकृत तिथि'
+    localizedDate: 'स्थानीयकृत तिथि',
+    username: 'उपयोगकर्ता नाम',
+    password: 'कुंजिका',
+    loginTitle: 'लॉगिन करने के लिए उपयोगकर्ता नाम या पासवर्ड दर्ज करें',
+    logout: 'लॉग आउट'
   }
 }
 

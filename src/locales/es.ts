@@ -9,7 +9,8 @@ const data: Translation =
   },
   messages:
   {
-    success: 'Éxito'
+    success: 'Éxito',
+    loginFailed: 'Nombre de usuario o contraseña incorrecta'
   },
   labels:
   {
@@ -19,7 +20,11 @@ const data: Translation =
     enterLargeNumber: 'Ingrese un número grande',
     localizedNumber: 'Número localizado',
     enterDate: 'Ingrese una fecha (por ejemplo, 1/1/2020)',
-    localizedDate: 'Fecha localizada'
+    localizedDate: 'Fecha localizada',
+    username: 'Nombre de usuario',
+    password: 'Contraseña',
+    loginTitle: 'Ingrese nombre de usuario o contraseña para iniciar sesión',
+    logout: 'Cerrar sesión'
   }
 }
 
